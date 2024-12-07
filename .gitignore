@@ -1,0 +1,18 @@
+# Executable files
+*.exe
+*.out
+*.app
+
+# C++ build files
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
