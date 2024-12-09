@@ -13,5 +13,6 @@ int main()
 
     for (auto numb : v)
         cout << numb << " ";
+
     return 0;
 }

@@ -14,5 +14,6 @@ int main()
 
     for (auto str : v)
         cout << str << endl;
+
     return 0;
 }

@@ -31,5 +31,6 @@ int main()
 
     for (auto numb : v2)
         cout << numb << " ";
+
     return 0;
 }
