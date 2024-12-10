@@ -20,5 +20,6 @@ int main()
 
     v.resize(7);
     v.resize(10, 100);
+
     return 0;
 }

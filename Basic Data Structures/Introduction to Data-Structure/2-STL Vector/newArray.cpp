@@ -1,9 +1,11 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223205/problem/L
 #include <bits/stdc++.h>
 using namespace std;
 
 vector<int> newArray(vector<int> v1, vector<int> v2, int n)
 {
     vector<int> v;
+
     for (int i = 0; i < n; i++)
         v.push_back(v2[i]);
 
