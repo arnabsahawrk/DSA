@@ -16,3 +16,7 @@
 *.swp
 *.swo
 *~
+
+# Exclude .cph folder and its contents
+.cph/
+.cph/*
