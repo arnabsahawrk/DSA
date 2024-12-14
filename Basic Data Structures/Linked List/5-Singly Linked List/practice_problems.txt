@@ -1,1 +1,20 @@
 https://docs.google.com/document/d/1mBmbTd2A0r2GYV50GkweULyN-TqKZSmx7UVM4-NX5cs/edit?tab=t.0#heading=h.eppwqc8hixnv
+
+a.Why do you think linked-list requires more memory than an array when storing the same number of elements?
+Ans. In array we store only the data on the other hand a Linked List store data in object and in the object we store the data and next object address.
+
+b.Write down Three Limitations of the array which can be solved by the use of Linked List.
+Ans. Three limitations of array is fixed size, sequential memory allocation, memory wastage in spare arrays.
+
+c.What is the value of Head?
+Ans. 5
+
+d.What is the value of ? marked address location?
+Ans.1020
+
+e.What will be the value of Head->Next->Next->Value?
+Ans.1
+
+f.What will be the value of Sum following pseudocode snippets?
+
+Ans.-1
