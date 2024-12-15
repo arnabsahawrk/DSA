@@ -20,11 +20,11 @@ int main()
 
     replace(v2.begin(), v2.end() - 2, 3, 100);
 
-    vector<int>::iterator it = find(v2.begin(), v2.end(), 4);
+    vector<int>::iterator itr = find(v2.begin(), v2.end(), 4);
 
-    int index = it - v2.begin();
+    int index = itr - v2.begin();
 
-    if (it != v2.end())
+    if (itr != v2.end())
         cout << "Found In Index: " << index << endl;
     else
         cout << "Not Found" << endl;

@@ -31,6 +31,5 @@ int main()
             cout << numb << " ";
         cout << endl;
     }
-
     return 0;
 }
