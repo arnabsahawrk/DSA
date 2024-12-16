@@ -14,11 +14,22 @@ public:
     }
 };
 
-void insert_at_head(Node *&head, int data)
+void insert_at_tail(Node *&head, int data)
 {
     Node *newNode = new Node(data);
-    newNode->next = head;
-    head = newNode;
+
+    if (head == nullptr)
+    {
+        head = newNode;
+        return;
+    }
+
+    Node *temp = head;
+    while (temp->next != nullptr)
+    {
+        temp = temp->next;
+    }
+    temp->next = newNode;
 }
 
 void print_linked_list(Node *head)
@@ -34,11 +45,11 @@ int main()
 {
     Node *head = nullptr;
 
-    insert_at_head(head, 5);
-    insert_at_head(head, 4);
-    insert_at_head(head, 3);
-    insert_at_head(head, 2);
-    insert_at_head(head, 1);
+    insert_at_tail(head, 1);
+    insert_at_tail(head, 2);
+    insert_at_tail(head, 3);
+    insert_at_tail(head, 4);
+    insert_at_tail(head, 5);
 
     print_linked_list(head);
 
