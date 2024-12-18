@@ -38,24 +38,28 @@ void display(Node *node)
     cout << endl;
 }
 
-void delete_at_head(Node *&head, Node *&tail)
+void delete_at_tail(Node *&head, Node *&tail)
 {
-    if (head == nullptr)
+    if (tail == nullptr)
         return;
-
-    Node *deleteNode = head;
 
     if (head == tail)
     {
+        delete tail;
         head = nullptr;
         tail = nullptr;
+        return;
     }
-    else
+    Node *temp = head;
+
+    while (temp->next != tail)
     {
-        head = head->next;
+        temp = temp->next;
     }
 
-    delete deleteNode;
+    delete tail;
+    tail = temp;
+    tail->next = nullptr;
 }
 
 int main()
@@ -67,7 +71,7 @@ int main()
     while (cin >> value)
         insert_at_tail(head, tail, value);
 
-    delete_at_head(head, tail);
+    delete_at_tail(head, tail);
 
     display(head);
 
