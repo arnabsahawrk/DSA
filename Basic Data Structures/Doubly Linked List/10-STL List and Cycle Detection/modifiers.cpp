@@ -6,7 +6,7 @@ int main()
     list<int> l = {1, 2, 3};
     list<int> l1 = {7, 7, 7, 4, 5, 6};
     list<int> l2;
-    // l2.assign(l.begin(), l.end());
+    l2.assign(l.begin(), l.end());
     l2 = l;
 
     l2.pop_front();
