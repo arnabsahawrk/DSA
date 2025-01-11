@@ -1,0 +1,3 @@
+/*
+Trees are powerful data structures used to efficiently organize and access data. Binary trees offer a specific stucture suitable for various applications. Understanding traversal techniques allows for manipulating data with these trees.
+*/
