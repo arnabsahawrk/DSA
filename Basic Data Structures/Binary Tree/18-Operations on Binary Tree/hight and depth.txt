@@ -1,0 +1,6 @@
+Definition of height of a binary tree
+-> The height of a binary tree is the height of the root node in the whole binary tree. In other words, the height of a binary tree is equal to the target number of edges from the root to the most distant leaf node.
+
+Definition of depth of a binary tree
+-> The depth of a node is the number of edges present in path from the root node of a tree to that node. The height of a node is the number of edges present in the longest path connecting that node to a leaf node.
+
