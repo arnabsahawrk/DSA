@@ -1,0 +1,67 @@
+Binary Search Tree (BST)
+-------------------------
+
+Definition: A binary search tree is a tree-based data structure that stores nodes in a specific order.
+
+Key Property: The left subtree of a node contains values less than the node's value, while the right subtree contains values greater than or equal to the node's value.
+
+Handling Duplicates in Binary Search Tree
+-----------------------------------------
+
+Duplicate Placement: Duplicates can be placed in either the left or right subtree, depending on the specific implementation.
+
+BST Properties: The key property of a BST, ordering values, remains consistent even with duplicate nodes.
+
+Searching in Binary Search Tree
+--------------------------------
+
+Divide and Conquer: The search algorithm effectively reduces the search space by half with each comparison.
+
+Time Complexity: Binary search trees offer efficient searching with an average time complexity of O(logN).
+
+Worst Case: In the worst-case scenario, where the tree is skewed (all nodes are aligned to one side), search can take O(N) time.
+
+Inserting Nodes in Binary Search Tree
+-------------------------------------
+
+Maintain Order: New nodes are inserted while adhering to the BST's ordering property.
+
+Find Insertion Point: The algorithm searches for the appropriate location for the new node based on its value.
+
+Time Complexity: Similar to search, insertion has an average time complexity of O(logN).
+
+Converting Arrays to BSTs
+--------------------------
+
+1.Sorted Arrays: An array must be sorted before converting it to a balanced binary search tree.
+
+2.Recursive Approach: A recursive algorithm can efficiently build a balanced BST from a sorted array by repeatedly choosing the middle element as the root.
+
+3.Time Complexity: This conversion process has a time complexity of O(N), as each element needs to be processed exactly once.
+
+Key Takeaways
+-------------
+
+1.Balanced Structure: Balanced trees ensure efficient searching and insertion, avoiding skewed trees.
+
+2.Real-World Applications: BSTs are used in various applications, including databases, search engines, and file systems.
+
+3.Further Exploration: Explore advanced BST concepts like AVL trees and red-black trees for greater efficiency.
+
+Summary
+--------
+* Binary Search + Binary Tree = Binary Search Tree
+
+1. all values of left subtree < node->value
+2. all values of right subtree > node->value
+3. keep count equal values
+
+* Search in BST
+1. Time Complexity: O(H) where H is height
+2. Best Case: H equivalent to logN
+3. Worst Case: H equivalent to N
+
+* Insert in BST
+1. Time Complexity: O(N * H)
+2. Best Case: O(NlogN)
+3. Worst Case: O(N^N)
