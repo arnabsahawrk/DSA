@@ -48,3 +48,11 @@ Key Takeaways
 
 Heap Insert Time Complexity: O(logN) for N value O(NlogN)
 Heap Delete Time Complexity: O(logN)
+
+Swapping one node value to another node value called heapify.
+2 types of heapify: Up heapify, Down heapify.
+generally up heapify for insertion, down heapfiy for deletion.
+
+Last non leap node in complete binary tree = (n / 2) - 1;
+
+Heap Sort Time Complexity:  -> NlogN
