@@ -1,0 +1,58 @@
+Complete Binary Trees: A Primer
+-------------------------------
+
+Definition: A complete binary tree is a binary tree where:
+
+1. All levels except the last are completely filled.
+2. Any missing nodes are on the last level, and they are filled from left to right.
+
+Benefits: Complete binary trees provide efficient storage and traversal, making them ideal for use in data structures like priority queues and heaps, where predictable and compact memory layouts are advantageous.
+
+Array Representation of Complete Binary Trees
+----------------------------------------------
+
+1. Index Mapping: Each node in a complete binary tree can be uniquely mapped to an index in an array. This array-based representation eliminates the need for pointers or complex memory management.
+
+2. Parent-Child Relationships: The relationship between a parent node and its children can be determined as follows:
+   - Parent Index = `i`
+   - Left Child Index = `2 * i + 1`
+   - Right Child Index = `2 * i + 2`
+   - Parent of Node at Index `i` = `(i - 1) / 2` (using integer division)
+
+These formulas allow constant-time access to parent and child nodes.
+
+
+Introduction to Heaps: A Specialized Binary Tree
+-------------------------------------------------
+
+1. Heap Property: A heap is a complete binary tree that adheres to a specific heap property:
+   - Min-Heap: The value of each parent node is less than or equal to its children.
+   - Max-Heap: The value of each parent node is greater than or equal to its children.
+
+2. Min-Heap: The smallest value is always at the root. This property ensures efficient retrieval of the minimum value.
+
+3. Max-Heap: The largest value is always at the root, making it ideal for algorithms like Heapsort.
+
+Key Takeaways
+--------------
+
+- Efficient Structure: Complete binary trees are compact and ensure efficient data storage and traversal.
+
+- Heaps and Priority Queues: Heaps, as a specialized form of complete binary trees, are fundamental to implementing priority queues and sorting algorithms.
+
+- Parent-Child Indexing: The array-based representation of complete binary trees simplifies traversal and operations.
+
+- Real-World Use Cases:  
+   - Heaps are used in Dijkstra’s algorithm, Prim’s algorithm, and Heapsort.  
+   - Priority queues rely on heaps for efficiently retrieving the highest or lowest priority element.
+
+Heap Insert Time Complexity: O(logN) for N value O(NlogN)
+Heap Delete Time Complexity: O(logN)
+
+Swapping one node value to another node value called heapify.
+2 types of heapify: Up heapify, Down heapify.
+generally up heapify for insertion, down heapfiy for deletion.
+
+Last non leap node in complete binary tree = (n / 2) - 1;
+
+Heap Sort Time Complexity:  -> NlogN

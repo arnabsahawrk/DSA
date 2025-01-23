@@ -1,0 +1,14 @@
+Limitation of Frequency Array:
+
+1. only integer count. we can't count an string or double data because we count the data depend on index and index is always integer start from 0 so, we can't count negative value as well.
+
+2. fixed index (0 to 10000). we can't count beyond 10000
+
+3. memory waste. if we have 1, 20, 20, data and count that in a frequency array in the middle 2 to 19 this a memory waste.
+
+
+Array -> index, value
+
+so for avoid this limitation we can use 'map'.
+
+Map -> key, value
