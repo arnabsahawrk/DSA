@@ -65,3 +65,15 @@ Types of Graph
    2. Acyclic (hasn't cycle)
 
 For cycle at least two nodes are connected, undirected graph in two nodes no cycle count but directed graph in two nodes can count cycle.
+
+Check 2 nodes are connected or not:
+ Adjacency_Matrix -> O(1) //best
+ Adjacency_List -> O(N)
+ Edge_List -> O(N)
+
+All the connected nodes from a node:
+ Adjacency_List -> Only Connected List  //best
+ Adjacency_Matrix -> O(N)
+ Edge_List -> O(N)
+
+When work with the edges edge_list best for it
