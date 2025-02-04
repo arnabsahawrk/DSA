@@ -1,0 +1,79 @@
+Algorithms: some sequency of steps/instructions to solve a problem.
+
+What is a Graph?
+----------------
+Definition: A graph is a collection of nodes(vertices) connected by edges. The edges can represent relationships, connections, or pathways between the nodes. Graphs can be directed, meaning the edges have a specific direction, or undirected, where edges are bidirectional.
+
+Examples: Imagine a social network, where nodes are people and edges represent friendships. Or, think of a map, where nodes are cities and edges are roads connecting them.
+
+Types of Graphs
+---------------
+-> Directed Graph, Undirected Graph, Weighted Graph, Acyclic Graph, Tree: & Cycle Graph, Complete Graph.
+
+Directed Graph: Edges have direction, representing one-way relationships.
+
+Undirected Graph: Edges are bidirectional representing symmetrical relationships.
+
+Weighted Graph: Edges have numerical values(weighs) representing costs distances, or strengths or connections.
+
+Real World Applications
+------------------------
+Social Networks: Representing users and their collections.
+Maps and Navigation: Finding optimal routes between locations.
+Computer Networks: Modelling connections between devices.
+Recommendation Systems: Suggesting products, content, or people based on relationships and preferences.
+
+Graph Input
+------------
+Edge List: A list of pairs, where each pair represents an edge connecting two nodes. Example: (A, B), (B, C), (C, D).
+
+Adjacency Matrix: A 2D array where rows and columns represent nodes. Each cell indicates the presence or absence of an edge between two nodes.
+
+Graph Representations
+---------------------
+Adjacency Matrix: Efficient for checking connections but can be space-inefficient for sparse graphs(graphs with few edges).
+
+Adjacency List: Efficient for space usage and finding neighbors of a node, suitable for sparse graphs.
+
+Edge List: Simple and compact but requires iterations for finding neighbors.
+
+Summary
+--------
+
+Difference between Graph and Tree
+-----------------------------------
+1. Multiple Edge
+2. Multiple Way
+3. Cycle
+4. Edge Direction
+
+the main difference is Cycle, that graph has, tree hasn't.
+tree is the little portion of graph, that hasn't cycle.
+
+Types of Graph
+---------------
+-Direction:
+   1. Directed (set one direction)
+   2. Undirected (don't set any direction so, assume can go both direction)
+
+-Weight:
+   1. Weighted  (set the weight (cost/time) to go another nodes)
+   2. Unweighted (don't set the weight, so we assume constant one for go every nodes)
+
+-Cycle:
+   1. Cyclic (has cycle)
+   2. Acyclic (hasn't cycle)
+
+For cycle at least two nodes are connected, undirected graph in two nodes no cycle count but directed graph in two nodes can count cycle.
+
+Check 2 nodes are connected or not:
+ Adjacency_Matrix -> O(1) //best
+ Adjacency_List -> O(N)
+ Edge_List -> O(N)
+
+All the connected nodes from a node:
+ Adjacency_List -> Only Connected List  //best
+ Adjacency_Matrix -> O(N)
+ Edge_List -> O(N)
+
+When work with the edges edge_list best for it
