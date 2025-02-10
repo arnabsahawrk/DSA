@@ -1,0 +1,20 @@
+Depth First Search (DFS)
+-------------------------
+
+Algorithm: DFS explores a graph by going as deep as possible along each brach before backtracking. It uses a stack data structure to manage the order of node visits.
+
+Example: Imagine traversing a maze. DFS would try to find the exit by going down every possible path in a single direction until reaching a dead end, then backtracking to explore other options.
+
+DFS on a 2D Grid
+------------------
+
+1. Exploring a Grid: When applying DFS to a 2D grid, we treat each cell as a node and edges connect neighboring cells.
+
+2. Example: Consider finding a specific cell in a grid. DFS would traverse the grid, systematically visiting each cell and its neighbors until finding the target cell or covering all reachable cells.
+
+BFS on a 2D Grid
+-----------------
+
+Grid Exploration: BFS can be used to navigate a 2D grid efficiently. It can find the shortest path between two points or explore all reachable cells in a grid.
+
+Applications: BFS is commonly used in path finding algorithms like finding the shortest route in a maze or a map, or for solving puzzles.

@@ -1,0 +1,3 @@
+Cycle means if I iterate through source vertex at last I again reach source vertex. It becomes a loop.
+
+For undirected graph minimum 3 vertices for a cycle, directed graph 2 vertices can be a cycle.
