@@ -1,0 +1,7 @@
+Dijkstra Algorithm: single source shortest distance. (SSSP)
+
+Usually for find out shortest distance from a single source we can use BFS and the BFS algorithm has a better time complexity but it has a limitation also that BFS can work only unweighted graph.
+
+So, for find out shortest distance from a single source in a weighted graph we need dijkstra algorithm.
+
+There is path relaxation concept for dijkstra, the concept is checking if going through a new point gives us a shorter route to somewhere else, and if it does, updating our route.
