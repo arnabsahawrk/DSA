@@ -1,0 +1,16 @@
+Single Source Shortest Distance
+----------------------------------
+- BFS (unweighted graph)
+- Dijkstra (weighted graph)
+- Bellman Ford Algorithm (negative weight cycle)
+
+The limitation of Dijkstra: Dijkstra can work when there is cycle and Dijkstra can work when there is negative weight but Dijkstra can't work when there is cycle and negative weight both at the same time. In negative weight cycle Dijkstra becomes an infinite loop. There is also a catch i.e. if the cycle total weight sum is negative then only it becomes an infinite loop.
+
+So, for this limitation we use Bellman Ford Algorithm. Bellman Ford Algorithm detect the cycle. This algorithm invented by two person Bellman and Ford that's why it has called Bellman Ford Algorithm.
+
+
+Time Complexity of BFS: O(V + E)
+
+Time Complexity of Dijkstra: O((V + E)logV)
+
+Time Complexity of Bellman Ford: O(V * E)
