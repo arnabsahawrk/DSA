@@ -1,0 +1,24 @@
+Single Source Shortest Distance
+---------------------------------
+- BFS
+- Dijkstra
+- Bellman-Ford
+
+All Pair Shortest Distance
+----------------------------
+- Floyd-Warshall
+
+When there is multiple query and for every query the source vertex is different then we should use Floyd-Warshall Algorithm. It gives a better complexity than BFS, Dijkstra, and Bellman-Ford. In that case most of the time we will get TLE if we use BFS, Dijkstra, and Bellman-Ford.
+
+For Floyd-Warshall we have to use Adjacency Matrix. Floyd-Warshall also can detect negative weighted cycle.
+
+
+Time Complexity
+---------------
+BFS: O(V+E)
+
+Dijkstra: O(ElogV)
+
+Bellman-Ford: O(V*E)
+
+Floyd-Warshall: O(V^3)

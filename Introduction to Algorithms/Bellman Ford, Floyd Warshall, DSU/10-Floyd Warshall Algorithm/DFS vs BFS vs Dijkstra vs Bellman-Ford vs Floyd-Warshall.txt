@@ -1,0 +1,22 @@
+DFS vs BFS vs Dijkstra vs Bellman-Ford vs Floyd-Warshall
+----------------------------------------------------------
+
+DFS (Traversal)
+-----------------
+When we have to traverse a graph we should use DFS. Its time complexity is O(V+E). The code less then others because we use recursion for this algorithm.
+
+BFS (Single Source Shortest Path In Unweighted Graph)
+------------------------------------------------------
+When we have to find out the shortest path in a unweighted graph from a single source we should use BFS. Its time complexity is O(V+E). BFS traverse the graph level by level by using a queue.
+
+Dijkstra (Single Source Shortest Path In Weighted Graph)
+----------------------------------------------------------
+When we have to find out the shortest path in a weighted graph from a single source we should use Dijkstra. Its time complexity is O(ElogV). For optimize traverse we use priority_queue in Dijkstra. Dijkstra can find out the shortest path in negative weighted graph but when the negative weighted graph has a cycle Dijkstra becomes an infinite loop.
+
+Bellman-Ford (Single Source Shortest Path In Negative Weighted Cycle Graph)
+----------------------------------------------------------------------------
+When we have to find out the shortest path in a negative weighted cycle graph from a single source we should use Bellman-Ford. Its time complexity is O(V*E). It not becomes an infinite loop because it exactly run n-1 times.
+
+Floyd-Warshall (Multiple Source Shortest Path In Weighted Graph)
+------------------------------------------------------------------
+When we have to find out the shortest path in a weighted graph from multiple source we should use Floyd-Warshall. Its time complexity is O(V^3). It can find out shortest path in negative weighted graph and can detect cycle.
