@@ -1,0 +1,59 @@
+Disjoint Set Union (DSU) Also known as Union-Find
+---------------------------------------------------
+Why Learn DSU?
+------------------
+- Union-Find Algorithm: Efficiently manage groups (or sets) and merge them.
+
+- Graph Applications:
+   * Connected Components: Quickly determine if two nodes are in the same connected component.
+   * Cycle Detection: Easily detect cycles in undirected graphs.
+   * Minimum Spanning Tree (MST): A key component in algorithms like Kruskal’s MST algorithm.
+
+Basic Set Concepts
+--------------------
+- Set Operations:
+   * Union (∪): Combines all unique elements from two sets.
+   * Intersection (∩): Retrieves only the elements common to both sets.
+
+Example:
+---------
+Let A = {1, 2, 3} and B = {2, 3, 4}
+
+A ∪ B = {1, 2, 3, 4} (All unique values)
+
+A ∩ B = {2, 3} (Only the common values)
+
+- Disjoint Sets: Two sets are disjoint if their intersection is empty.
+
+Example:
+----------
+Let A = {1, 2, 3} and B = {4, 5, 6}
+
+A ∩ B = {} (No common elements, so A and B are disjoint)
+
+What is DSU?
+-------------
+- Disjoint Sets: Think of DSU as a collection of sets where no two sets overlap (i.e., they are disjoint).
+
+- Union-Find Algorithm:
+   * Find: Determine which set (or group) an element belongs to (usually by finding the “leader” or “parent” of the set).
+   * Union: Merge two disjoint sets into a single set.
+
+When two disjoint sets combine (or "union"), they form a new set that represents their union. DSU is all about managing these sets and answering queries like "Are these two elements in the same set?" quickly.
+
+Key Operations in DSU
+----------------------
+1. Find: Time complexity -> O(logN)
+- Purpose: Identify the leader or representative of the set that an element belongs to.
+- Usage: Helps in checking if two elements are in the same group.
+
+2. Union: Time complexity -> O(α(N))
+- Purpose: Combine two disjoint sets into one.
+- Usage: Used to merge groups when a connection is formed (e.g., when adding an edge in a graph).
+
+For DSU Find operation we use (recursion) with optimized solution. The time complexity will be O(logN).
+
+For DSU Union operation we use (Union by Size), we have to opt the long group size as a leader when we are merging two groups. 
+- We also can perform the operation by (Union by Rank), (Union by Height).
+
+For detecting cycle in graph by DSU, DSU can only detect cycle in undirected graph.
