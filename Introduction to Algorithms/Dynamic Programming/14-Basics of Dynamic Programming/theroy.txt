@@ -1,0 +1,13 @@
+Dynamic Programming -> (Recursion + Optimization)
+--------------------------------------------------
+-> A recursive solution what we are try to optimized. It's just a process or technique, not a algorithm. With this approach we can mitigate the time complexity.
+
+* When we call a recursion function and the recursion function is do some duplicate work we can optimized it by memorization.
+
+Two types of DP
+----------------
+1. Top-Down approach (using recursion)
+2. Bottom-Up approach (using loop)
+
+* Top-Down approach called memorization, its time complexity O(N)
+* Bottom-Up approach called tabulation, its time complexity O(N)
