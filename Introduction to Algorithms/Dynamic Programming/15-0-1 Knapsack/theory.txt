@@ -1,0 +1,22 @@
+0-1 Knapsack Notes 📝
+-----------------------
+
+Concept
+--------
+* 0-1: Each item can either be taken (1) or not taken (0).
+* Knapsack: A bag with a maximum weight capacity (W).
+
+Time Complexity
+-----------------
+* Without Memoization: 𝑂(2^n) (Exponential - Brute Force Recursion)
+* With Memoization: 𝑂(n×W) (DP - Optimized)
+    > Where n is the number of items and W is the capacity
+
+Approach
+---------
+1. Recursive Choice:
+  * If item weight ≤ remaining capacity → Choose (take or not take).
+  * Else, Skip the item.
+
+2. Memoization (Top-Down DP): Store results in a 2D DP table to avoid recomputation.
+3. Space Optimization: Can reduce 𝑂(n×W) → 𝑂(W) using 1D DP array.
