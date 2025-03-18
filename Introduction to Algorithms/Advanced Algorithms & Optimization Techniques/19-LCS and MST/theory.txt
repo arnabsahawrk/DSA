@@ -1,0 +1,23 @@
+Subsequence vs. Substring vs. Subarray vs. Subset
+---------------------------------------------------
+- Subsequence: A sequence derived by removing elements without changing order.
+    * Example: "Hello" → ["Hel", "Ho", "Hll"] (✔) but not "lh" (✘).
+
+- Substring: A contiguous part of a string (no gaps).
+   * Example: "Hello" → ["Hel", "llo"] (✔) but not "hll" (✘).
+
+- Subarray: Same as a substring, but in an array.
+
+Subset: Any selection of elements in any order, contiguous or not.
+
+Longest Common Subsequence (LCS)
+------------------------------------
+* The longest subsequence that appears in the same order in two given sequences.
+
+Minimum Spanning Tree (MST)
+-------------------------------
+* A tree connecting all nodes in a graph with the minimum total edge weight.
+
+- Properties:
+   * No Cycles (A spanning tree cannot have a loop).
+   * Only One Unique Path between any two nodes.
